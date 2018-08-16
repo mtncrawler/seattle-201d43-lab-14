@@ -24,7 +24,7 @@ populateForm();
 // object, save the whole thing back to local storage and update the screen
 // so that it shows the # of items in the cart and a quick preview of the cart itself.
 function handleSubmit(event) {
-
+  event.target.id =
   // TODO: Prevent the page from reloading
   event.preventDefault();
   // Do all the things ...
@@ -44,6 +44,7 @@ function addSelectedItemToCart() {
   var itemQuantity = document.getElementById('quantity').value;
   var itemPicked = document.getElementById('items').value;
   // TODO: suss out the item picked from the select list
+  event.target.id;
 
   // TODO: get the quantity
 
